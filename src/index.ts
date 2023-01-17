@@ -21,8 +21,8 @@ program
     "after",
     `
   
-  Example Usage:
-    $ sizet-cli remote react@latest chalk@1.0.0 sizet --tempDir temp- --output sizes.json`
+Example Usage:
+  $ sizet-cli remote react@latest chalk@1.0.0 sizet --tempDir temp- --output sizes.json`
   );
 
 // Arguments
