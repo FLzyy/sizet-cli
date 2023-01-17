@@ -3,7 +3,9 @@
   "version": "1.0.3",
   "description": "A CLI tool to easily calculate the size of dependencies.",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": {
+    "sizet-cli": "index.js"
+  },
   "type": "module",
   "scripts": {
     "compile": "ncc build src/index.ts -m -C --no-source-map-register --target es2021",
