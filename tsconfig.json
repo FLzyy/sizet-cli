@@ -1,10 +1,10 @@
 {
-    "compilerOptions": {
-      "module": "NodeNext",
-      "moduleResolution": "NodeNext",
-      "strictNullChecks": true,
-      "target": "ES2021",
-      "outDir": "dist"
-    },
-    "include": ["src/**/*", "scripts/**/*", "tests/**/*"]
-  }
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strictNullChecks": true,
+    "target": "ES2021",
+    "outDir": "dist"
+  },
+  "include": ["src/**/*", "scripts/**/*", "tests/**/*"]
+}
