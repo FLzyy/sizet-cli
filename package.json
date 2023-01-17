@@ -6,7 +6,7 @@
   "bin": "index.js",
   "type": "module",
   "scripts": {
-    "compile": "ncc build src/index.ts -m -C --no-source-map-register",
+    "compile": "ncc build src/index.ts -m -C --no-source-map-register --target es2021",
     "clean": "rmdir /Q /S dist",
     "build": "npm run compile && node scripts/build.js",
     "start": "tsx src/index.ts",
