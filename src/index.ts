@@ -3,11 +3,10 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 /* eslint-disable @typescript-eslint/no-confusing-void-expression */
 
-import { Command, Argument } from "commander";
+import { program, Argument } from "commander";
 import * as actions from "sizet";
 import { writeFileSync } from "fs";
 
-const program = new Command();
 let command = "";
 let value: string[] = [];
 
