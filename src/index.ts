@@ -16,7 +16,14 @@ program
   .name("sizet-cli")
   .description("A CLI tool to easily calculate the size of dependencies.")
   .version("1.0.0", "-v, --version")
-  .usage("<command> <value...> [options]");
+  .usage("<command> <value...> [options]")
+  .addHelpText(
+    "after",
+    `
+  
+  Example Usage:
+    $ sizet-cli remote react@latest chalk@1.0.0 sizet --tempDir temp- --output sizes.json`
+  );
 
 // Arguments
 
