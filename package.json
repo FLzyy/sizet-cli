@@ -19,11 +19,11 @@
     "url": "git+https://github.com/FLzyy/sizet-cli.git"
   },
   "keywords": [
-    "key",
-    "w",
-    "o",
-    "r",
-    "d"
+    "sizet",
+    "size",
+    "package",
+    "performance",
+    "cli"
   ],
   "author": "FLzyy",
   "license": "MIT",

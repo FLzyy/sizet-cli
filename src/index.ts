@@ -15,7 +15,7 @@ let value: string[] = [];
 program
   .name("sizet-cli")
   .description("A CLI tool to easily calculate the size of dependencies.")
-  .version("1.0.0", "-v, --version")
+  .version("1.0.1", "-v, --version")
   .usage("<command> <value...> [options]")
   .addHelpText(
     "after",
