@@ -16,6 +16,10 @@ npm i -g sizet-cli@latest
 sizet-cli remote react@latest
 ```
 
+```sh
+sizet-cli remote react@experimental chalk@1.0.0 sizet@latest
+```
+
 ## Commands
 
 ### Local
@@ -25,7 +29,7 @@ Calculates the size of a NPM dependency in a local folder.
 #### Usage:
 
 ```sh
-sizet-cli local dist/
+sizet-cli local dist/ dist2/ # ...
 ```
 
 ### Remote
@@ -35,7 +39,7 @@ Calculates the size of a NPM dependency hosted on the NPM registry.
 #### Usage:
 
 ```sh
-sizet-cli remote react@latest
+sizet-cli remote react@latest chalk@latest # ...
 ```
 
 ## Options
@@ -53,10 +57,10 @@ Enables verbose logging of the steps made by sizet, such as npm pack, install, e
 #### Usage:
 
 ```sh
-sizet-cli remote react@latest -v
+sizet-cli remote react@latest -d
 ```
 
-### `--temp`
+### `--tempDir`
 
 Changes the prefix for the temporary folder created, only used by [`remote`](#remote)
 
