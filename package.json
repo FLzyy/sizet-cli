@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A CLI tool to easily calculate the size of dependencies.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "compile": "npx swc src/index.ts -d dist --config-file .swcrc",
     "clean": "rmdir /Q /S dist",
