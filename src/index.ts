@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import { Command } from "commander";
 import { remote, local } from "sizet";
 import { createSpinner } from "nanospinner";
