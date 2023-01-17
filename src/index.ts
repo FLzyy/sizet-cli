@@ -63,9 +63,9 @@ try {
       verbose: opts.verbose,
     });
 
-    console.log(`\x1b[1m${value[i]}\x1b[0m:
-    ● Tarred and Gzipped: ${final[value[i]].tarGzipped / 1000}kb
-    ● Unpacked: ${final[value[i]].unpacked / 1000}kb`);
+    console.log(`\x1b[34m${value[i]}:\x1b[0m
+  ● Tarred and Gzipped: ${final[value[i]].tarGzipped / 1000}kb
+  ● Unpacked: ${final[value[i]].unpacked / 1000}kb\n`);
   }
 
   if (opts.output) {
