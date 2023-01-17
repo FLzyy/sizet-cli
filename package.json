@@ -3,12 +3,10 @@
   "version": "1.0.3",
   "description": "A CLI tool to easily calculate the size of dependencies.",
   "main": "index.js",
-  "bin": {
-    "sizet-cli": "index.js"
-  },
+  "bin": "index.js",
   "type": "module",
   "scripts": {
-    "compile": "ncc build src/index.ts -m -C --no-source-map-register --target es2021",
+    "compile": "npx swc src/index.ts -d dist --config-file .swcrc",
     "clean": "rmdir /Q /S dist",
     "build": "npm run compile && node scripts/build.js",
     "start": "tsx src/index.ts",
@@ -35,11 +33,11 @@
   },
   "homepage": "https://github.com/FLzyy/sizet-cli#readme",
   "devDependencies": {
+    "@swc/cli": "^0.1.59",
+    "@swc/core": "^1.3.27",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
-    "@vercel/ncc": "^0.36.0",
-    "commander": "^10.0.0",
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-standard-with-typescript": "^29.0.0",
@@ -47,11 +45,14 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "prettier": "^2.8.3",
-    "sizet": "^1.0.1",
     "tsx": "^3.12.2",
     "typescript": "^4.9.4"
   },
   "engines": {
     "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "sizet": "^1.0.1"
   }
 }
