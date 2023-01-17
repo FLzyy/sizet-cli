@@ -49,7 +49,6 @@
   },
   "dependencies": {
     "commander": "^10.0.0",
-    "nanospinner": "^1.1.0",
     "sizet": "^1.0.1"
   }
 }
