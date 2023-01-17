@@ -1,7 +1,7 @@
 {
-  "name": "npm-package",
+  "name": "sizet-cli",
   "version": "1.0.0",
-  "description": "npm-package description",
+  "description": "A CLI tool to easily calculate the size of dependencies.",
   "main": "index.js",
   "scripts": {
     "compile": "npx swc src/index.ts -d dist --config-file .swcrc",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FLzyy/npm-package.git"
+    "url": "git+https://github.com/FLzyy/sizet-cli.git"
   },
   "keywords": [
     "key",
@@ -28,9 +28,9 @@
   "author": "FLzyy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FLzyy/npm-package/issues"
+    "url": "https://github.com/FLzyy/sizet-cli/issues"
   },
-  "homepage": "https://github.com/FLzyy/npm-package#readme",
+  "homepage": "https://github.com/FLzyy/sizet-cli#readme",
   "devDependencies": {
     "@swc/cli": "^0.1.59",
     "@swc/core": "^1.3.26",
@@ -46,5 +46,9 @@
     "prettier": "^2.8.3",
     "tsx": "^3.12.2",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "sizet": "^1.0.1"
   }
 }
