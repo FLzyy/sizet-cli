@@ -48,9 +48,7 @@ Enables verbose logging of the steps made by sizet, such as npm pack, install, e
 
 #### Aliases:
 
-- `-v`
 - `-d`
-- `--debug`
 
 #### Usage:
 
@@ -58,7 +56,7 @@ Enables verbose logging of the steps made by sizet, such as npm pack, install, e
 sizet-cli remote react@latest -v
 ```
 
-### `--temp-prefix`
+### `--temp`
 
 Changes the prefix for the temporary folder created, only used by [`remote`](#remote)
 
@@ -66,10 +64,7 @@ Changes the prefix for the temporary folder created, only used by [`remote`](#re
 
 #### Aliases:
 
-- `--temp`
-- `--prefix`
 - `-t`
-- `-p`
 
 #### Usage:
 
@@ -86,7 +81,6 @@ If true, and a path for a file to output to it will output **JSON** to that file
 #### Aliases:
 
 - `-o`
-- `--out`
 
 #### Usage:
 
