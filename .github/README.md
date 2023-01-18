@@ -1,5 +1,10 @@
 # sizet-cli
 
+[![npm version](https://img.shields.io/npm/v/sizet-cli.svg)](https://www.npmjs.com/package/sizet-cli)
+[![npm downloads](https://img.shields.io/npm/dw/sizet-cli.svg)](https://www.npmjs.com/package/sizet-cli)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/sizet-cli)](https://www.npmjs.com/package/sizet-cli)
+[![CodeFactor](https://www.codefactor.io/repository/github/flzyy/sizet-cli/badge)](https://www.codefactor.io/repository/github/flzyy/sizet-cli)
+
 A CLI tool to easily calculate the size of dependencies.
 
 ## Usage
