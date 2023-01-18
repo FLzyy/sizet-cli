@@ -1,6 +1,6 @@
 {
   "name": "sizet-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A CLI tool to easily calculate the size of dependencies.",
   "main": "index.js",
   "bin": "index.js",
