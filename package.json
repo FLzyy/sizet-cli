@@ -8,7 +8,7 @@
   "scripts": {
     "compile": "swc src/index.ts -d dist --config-file .swcrc",
     "clean": "rmdir /Q /S dist",
-    "build": "npm run compile && node scripts/build.js",
+    "build": "npm run compile && tsx scripts/build.ts",
     "start": "tsx src/index.ts",
     "pub": "npm run build && cd dist && npm publish",
     "patch": "npm version patch && npm run pub && git push --follow-tags && npm run clean",
