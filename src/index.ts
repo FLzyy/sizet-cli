@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 /* eslint-disable @typescript-eslint/no-confusing-void-expression */
 
-import { program, Argument } from "commander";
+import { Argument, program } from "commander";
 import * as actions from "sizet";
 import { writeFileSync } from "fs";
 
@@ -19,7 +19,7 @@ program
   .usage("<command> <value...> [options]")
   .addHelpText(
     "after",
-    "\n\nExample Usage:\n  $ sizet-cli remote react@latest chalk@1.0.0 sizet --tempDir temp- --output sizes.json"
+    "\n\nExample Usage:\n  $ sizet-cli remote react@latest chalk@1.0.0 sizet --tempDir temp- --output sizes.json",
   );
 
 // Arguments
@@ -28,8 +28,8 @@ program
   .addArgument(
     new Argument(
       "<command>",
-      "the command used to calculate a package"
-    ).choices(["remote", "local"])
+      "the command used to calculate a package",
+    ).choices(["remote", "local"]),
   )
   .argument("<value...>", "the folder or package name to be calculated")
   .action((cmd, val) => {
@@ -63,14 +63,14 @@ try {
   const length = value.length;
   for (let i = 0; i < length; i++) {
     final[value[i]] = run(value[i], {
-      tempDir: opts.tempDir,
-      verbose: opts.verbose,
+      tempDir: opts.tempDir ?? "temp-",
+      verbose: opts.verbose ?? false,
     });
 
     console.log(
       `\x1b[1;34m${value[i]}:\x1b[0m\n  ● Tarred and Gzipped: ${
         final[value[i]].tarGzipped / 1000
-      }kb\n  ● Unpacked: ${final[value[i]].unpacked / 1000}kb\n`
+      }kb\n  ● Unpacked: ${final[value[i]].unpacked / 1000}kb\n`,
     );
   }
 
